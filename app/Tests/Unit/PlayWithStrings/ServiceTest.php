@@ -6,7 +6,7 @@ use Models\NumberOfCharInText;
 use Services\PlayWithStrings;
 use PHPUnit\Framework\TestCase;
 
-final class TestService extends TestCase
+final class ServiceTest extends TestCase
 {
     private $serviePlayWithStrings;
     private $mockNumberOfCharInText;
