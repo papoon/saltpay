@@ -3,7 +3,7 @@ FROM ubuntu:21.04
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && apt-get -y install software-properties-common && add-apt-repository ppa:ondrej/php \
-&& php7.4 php7.4-common php7.4-opcache php7.4-cli php7.4-gd php7.4-curl php7.4-mysql php7.4-soap php7.4-xml php7.4-simplexml pwgen php7.4-zip php7.4-mbstring wget unzip gcc \
+&& apt-get -y install php7.4 php7.4-common php7.4-opcache php7.4-cli php7.4-gd php7.4-curl php7.4-mysql php7.4-soap php7.4-xml php7.4-simplexml pwgen php7.4-zip php7.4-mbstring wget unzip gcc \
 && apt-get install -y git curl php7.4-dev && curl -sS https://getcomposer.org/installer -o composer-setup.php \
 && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
 && apt-get install -y vim php7.4-xdebug php7.4-mongodb \
