@@ -1,16 +1,18 @@
-# SaltPay Code Challenge
+# SaltPay Technical Assessment
 
 ## Instructions
 
 * Clone repo
 * Rename .env.example to .env
 
+
 ## Usage
 ### Docker
 
 ```bash
 docker build .
-docker-compose up -d
+docker run barkyn_api
+docker-compose up
 ```
 
 ### Dependencies
@@ -23,4 +25,3 @@ composer install
 ```bash
 php libs/vendor/bin/phinx migrate --configuration db/phinx.php
 ```
-
