@@ -11,7 +11,6 @@
 
 ```bash
 docker build .
-docker run barkyn_api
 docker-compose up
 ```
 
