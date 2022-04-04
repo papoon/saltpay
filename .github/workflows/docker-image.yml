@@ -18,5 +18,5 @@ jobs:
       run: docker build . --file Dockerfile -t saltpay
     - name: Run tests
       run: |
-        docker run saltpay /bin/bash -c "cd var/www/html/libs/ && composer install"
+        docker run saltpay /bin/bash -c "cd /var/www/html/ && ls -la"
         docker run saltpay /bin/bash -c "var/www/html/libs/vendor/bin/phpunit  --configuration Tests/phpunit.xml"
