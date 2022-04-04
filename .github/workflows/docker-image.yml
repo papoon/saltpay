@@ -16,5 +16,15 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - uses: actions/checkout@v1
+    with:
+        fetch-depth: 1
+    - name: Teste
+      run: |
+        ls -la
+    container:
+      image: php:7.4-apache
+      volumes:
+      - $GITHUB_WORKSPACE:/var/www/html
     - name: Run tests
-      run: docker run --rm -v $(pwd):/var/www/html libs/vendor/bin/phpunit  --configuration Tests/phpunit.xml
+      run: $GITHUB_WORKSPACE/libs/vendor/bin/phpunit  --configuration Tests/phpunit.xml
