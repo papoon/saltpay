@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:saltpay
+      run: docker build . --file Dockerfile -t saltpay
     - name: Run tests
       run: docker run saltpay /bin/bash -c "echo 'hello'"
