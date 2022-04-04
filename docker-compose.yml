@@ -5,7 +5,7 @@ services:
     build: .
     privileged: true
     volumes: 
-      - ${VOLUME_SALTPAY}:/var/www/html/:cached
+      - ${VOLUME_SALTPAY}:/var/www/html/
     environment: 
       - ENV=${ENV}
       - TZ=Europe/Lisbon

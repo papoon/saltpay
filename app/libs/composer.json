@@ -3,12 +3,14 @@
         "phpunit/phpunit": "9.5.*",
         "robmorgan/phinx": "^0.12.7",
         "luracast/restler": "^5",
-        "opis/database": "^4.2"
+        "opis/database": "^4.2",
+        "twig/twig": "^3.0"
     },
     "autoload": {
         "psr-4": {
             "Models\\": "../Models/",
-            "Services\\": "../Services/"
+            "Services\\": "../Services/",
+            "Utils\\": "../Utils/"
         }
     },
     "autoload-dev": {

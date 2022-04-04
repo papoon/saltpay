@@ -1,0 +1,23 @@
+<phpunit
+        bootstrap="../libs/vendor/autoload.php"
+        colors="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        processIsolation="false"
+        stopOnFailure="false"
+        verbose="true"
+        forceCoversAnnotation="false"
+        beStrictAboutCoversAnnotation="false">
+    <testsuites>
+        <testsuite name="PlayWithStrings">
+            <directory>Unit/PlayWithStrings/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true" processUncoveredFilesFromWhitelist="false">
+            <directory>../Services/</directory>
+            <directory>../Utils/</directory>
+        </whitelist>
+    </filter>
+</phpunit>

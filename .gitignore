@@ -1,3 +1,5 @@
 .env
 mariadb/
 app/libs/vendor/
+.vscode
+app/Tests/.phpunit*
