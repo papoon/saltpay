@@ -17,4 +17,3 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile -t saltpay
-        docker run saltpay /bin/bash -c "cd /var/www/html/ && ls -la"

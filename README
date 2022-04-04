@@ -1,0 +1,26 @@
+# SaltPay Code Challenge
+
+## Instructions
+
+* Clone repo
+* Rename .env.example to .env
+
+## Usage
+### Docker
+
+```bash
+docker build .
+docker-compose up -d
+```
+
+### Dependencies
+
+```bash
+composer install
+```
+### Migrations
+
+```bash
+php libs/vendor/bin/phinx migrate --configuration db/phinx.php
+```
+
