@@ -22,9 +22,5 @@ jobs:
     - name: Teste
       run: |
         ls -la
-    container:
-      image: php:7.4-apache
-      volumes:
-      - $GITHUB_WORKSPACE:/var/www/html
     - name: Run tests
       run: $GITHUB_WORKSPACE/libs/vendor/bin/phpunit  --configuration Tests/phpunit.xml
