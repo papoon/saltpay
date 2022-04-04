@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile -t saltpay
     - name: Run tests
-      run: docker run saltpay /bin/bash -c "libs/vendor/bin/phpunit  --configuration Tests/phpunit.xml "
+      run: docker run saltpay /bin/bash -c "var/www/html/libs/vendor/bin/phpunit  --configuration Tests/phpunit.xml "
