@@ -15,8 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile -t saltpay
-    - name: Run tests
       run: |
+        docker build . --file Dockerfile -t saltpay
         docker run saltpay /bin/bash -c "cd /var/www/html/ && ls -la"
-        docker run saltpay /bin/bash -c "var/www/html/libs/vendor/bin/phpunit  --configuration Tests/phpunit.xml"
