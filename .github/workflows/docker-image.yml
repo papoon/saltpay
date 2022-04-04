@@ -21,4 +21,4 @@ jobs:
       run: |
         ls -la
     - name: Run tests
-      run: $GITHUB_WORKSPACE/libs/vendor/bin/phpunit  --configuration Tests/phpunit.xml
+      run: app/libs/vendor/bin/phpunit  --configuration Tests/phpunit.xml
