@@ -19,7 +19,8 @@ jobs:
 
     - name: Validate composer.json and composer.lock
       run: |
-        cd libs/
+        ls -la
+        cd app/libs/
         composer validate --strict
 
     - name: Cache Composer packages
