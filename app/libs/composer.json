@@ -17,5 +17,8 @@
         "psr-4": {
             "Tests\\": "../Tests/"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --configuration ../Tests/phpunit.xml"
     }
 }
