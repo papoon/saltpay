@@ -22,13 +22,6 @@ jobs:
         php-version: 7.4
     
     - uses: actions/checkout@v3
-
-    - name: Validate composer.json and composer.lock
-      run: |
-        ls -la
-        cd app/libs/
-        
-
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v3
